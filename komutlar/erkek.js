@@ -9,7 +9,7 @@ module.exports = {
     $changeNickname[$mentioned[1]; $noMentionMessage[1] | $noMentionMessage[2]]
    
     $channelSendMessage[chatid;<@$mentioned[1]> Aramıza Katıldı Ona Hoş Geldin Diyelim <#kurallarkanalıid> Kanalını Okumuş Sayılacaksın. İyi Eğlenceler.]
-    $channelSendMessage[kadınkayıtlog;
+    $channelSendMessage[kadınkayıtlogid;
    
     **Kayıt Edilen Kullanıcı:** \`$userTag[$mentioned[1]]\` \`($mentioned[1])\`
     
