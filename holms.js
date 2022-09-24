@@ -33,7 +33,7 @@ bot.onLeave()
 bot.onMessage()
 
 bot.status({
-    text: "Holms Kayıt Altyapısı <:limon:1016758552867635200",
+    text: "Holms Kayıt Altyapısı",// botun durumu
     type: "COMPETING",//PLAYING-WATCHING-LISTENING-STREAMING-COMPETING
                       //oynuyor-izliyor-dinliyor-yayında-yarışıyor
     status: "online", //idle-online-dnd-streaming
@@ -50,14 +50,14 @@ bot.readyCommand({
 
 // HoşGeldin 
 bot.joinCommand({
-    channel:"1020058894728433705", //HoşGeldin kanalı ID'si
+    channel:"", //HoşGeldin kanalı ID'si
     code:`
     **Sunucuya Hoş geldin <@$authorID> \`($authorID)\`**
     Seninle birlikte sunucumuz toplam **$membersCount** kişiye ulaşmış bulunmakta!
     Hesabın \`$creationDate[$authorID]\` tarihinde oluşturulmuş.
     **Kurallar sunucunun düzenini sağlamak için konulmuştur.**
-    <#1019690772565610567> kanalından kurallarımızı okumayı ihmal etme. 
-        Sunucuya erişebilmek için teyit kanallarında teyit vermen gerekiyor <@&1020058833281876059> rolündeki yetkilililer seninle ilgilenicektir.
+    <#kuralkanalıid> kanalından kurallarımızı okumayı ihmal etme. 
+        Sunucuya erişebilmek için teyit kanallarında teyit vermen gerekiyor <@kayıtyetklisi> rolündeki yetkilililer seninle ilgilenicektir.
     **İyi Eğlenceler.**
     `
     }) 
