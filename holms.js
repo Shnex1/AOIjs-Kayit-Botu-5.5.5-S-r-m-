@@ -3,10 +3,10 @@ const fs = require('fs');
 const keep_alive = require('./http.js');
 
 const bot = new aoijs.AoiClient({
-    token: "NzkyNDgxMzM2MTE1MzMxMDcz.GFE7vC.t2uhHawhNc2is7pz0dOnErIZfec5n5Vi70zTrA", //process.env['token'], gibi de yapabilirsiniz.
-    prefix: "+",
-    intents: ["GUILDS", "GUILD_MESSAGES", "GUILD_EMOJIS_AND_STICKERS", "GUILD_INVITES", "GUILD_BANS", "GUILD_MEMBERS"],
-    mobilePlatform: true
+    token: "token", //process.env['token'], gibi de yapabilirsiniz.
+    prefix: "prefix",//istediğiniz prefixi girebilirsiniz.
+    intents: ["GUILDS", "GUILD_MESSAGES", "GUILD_EMOJIS_AND_STICKERS", "GUILD_INVITES", "GUILD_BANS", "GUILD_MEMBERS"],//elleme
+    mobilePlatform: true //botunuzu mobildeymiş gibi gösterir isterseniz silebilirsiniz.
     })
 
 
@@ -34,7 +34,8 @@ bot.onMessage()
 
 bot.status({
     text: "Holms Kayıt Altyapısı <:limon:1016758552867635200",
-    type: "COMPETING",
+    type: "COMPETING",//PLAYING-WATCHING-LISTENING-STREAMING-COMPETING
+                      //oynuyor-izliyor-dinliyor-yayında-yarışıyor
     status: "online", //idle-online-dnd-streaming
     time: 12
   })
