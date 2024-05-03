@@ -33,7 +33,7 @@ bot.onLeave()
 bot.onMessage()
 
 bot.status({
-    text: "Holms Kayıt Altyapısı",// botun durumu
+    text: "estanto Kayıt Altyapısı",// botun durumu
     type: "COMPETING",//PLAYING-WATCHING-LISTENING-STREAMING-COMPETING
                       //oynuyor-izliyor-dinliyor-yayında-yarışıyor
     status: "online", //idle-online-dnd-streaming
